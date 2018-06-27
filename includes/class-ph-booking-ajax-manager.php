@@ -22,8 +22,13 @@ class phive_booking_ajax_manager{
 		global $woocommerce;
 		$product_id = $_POST['product_id'];
 
-		$from = $_POST['book_from'];
-		$to = $_POST['book_to'];
+		$date_format = get_option( 'date_format' );
+
+		$from = wp_unslash( $_POST['book_from'] );
+		$to = wp_unslash( $_POST['book_to'] );
+
+		$from_date = DateTime::createFromFormat( 'Y-m-d', esc_attr( $from ) );
+		$to_date = DateTime::createFromFormat( 'Y-m-d', esc_attr( $to ) );
 
 		$value[ $product_id ] = array( 'book_from' => $from, 'book_to'=>$to );
 		WC()->customer->update_meta_data( 'phive_booking_details', $value );
@@ -35,6 +40,8 @@ class phive_booking_ajax_manager{
 			array(
 				'price_html' 	=> $prod_obj->get_price_html(),
 				'price'			=> $prod_obj->get_price(),
+				'from_date'		=> $from_date->format( $date_format ),
+				'to_date'		=> $to_date->format( $date_format ),
 			)
 		);
 		exit();

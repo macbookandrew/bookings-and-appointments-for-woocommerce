@@ -1,20 +1,11 @@
 jQuery(document).ready(function($) {
 	function generate_booking_info_text(from, to, cost){
 		if( from !== to ){
-			date_html = "<b>"+phive_booking_ajax.booking_date+":</b>&nbsp;"+formate_date(from)+"&nbsp;to&nbsp;"+formate_date(to);
+			date_html = "<b>"+phive_booking_ajax.booking_date+":</b>&nbsp;"+from+"&nbsp;to&nbsp;"+to;
 		}else{
-			date_html = "<b>"+phive_booking_ajax.booking_date+":</b>&nbsp;"+formate_date(from);
+			date_html = "<b>"+phive_booking_ajax.booking_date+":</b>&nbsp;"+from;
 		}
 		$('.booking-info-wraper').html('<p id="booking_info_text">'+date_html+'</p> <p id="booking_price_text"> '+phive_booking_ajax.booking_cost+':&nbsp;'+cost+'</p>');
-	}
-
-	function formate_date( input_date ){
-		var date = new Date( input_date.replace(/-/g, "/") ); //Safari bowser will accept only with seprator '/'
-
-		var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-		"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][date.getMonth()];
-		var strDate = date.getDate() + '-' + month + '-' + date.getFullYear();
-		return strDate;
 	}
 
 	jQuery( ".ph-date-to" ).on('change', function(){
@@ -44,13 +35,7 @@ jQuery(document).ready(function($) {
 
 			$("#phive_booked_price").val(result.price);
 
-			//in the case of monthpicker, take last date of 'TO' month
-			if( (to.match(new RegExp("-", "g")) || []).length < 2 ){
-				var date = new Date( to.replace(/-/g, "/") ); //Safari bowser will accept only with seprator '/'
-				var LastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-				to = to+"-"+LastDay.getDate();
-			}
-			generate_booking_info_text( from, to, result.price_html );
+			generate_booking_info_text( result.from_date, result.to_date, result.price_html );
 		});
 	});
 
