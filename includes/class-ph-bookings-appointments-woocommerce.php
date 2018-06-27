@@ -24,7 +24,7 @@ class phive_booking_core{
 			}
 		}
 		if( $is_booking_product ){
-			return '<a href="'.wc_get_page_permalink( 'cart' ).'" class="button wc-forward">View cart</a> Booking Done. Please check cart for payment.';
+			return '<a href="'.wc_get_page_permalink( 'cart' ).'" class="button wc-forward">View cart</a> Please continue to your cart for payment.';
 		}else{
 			return $message;
 		}
