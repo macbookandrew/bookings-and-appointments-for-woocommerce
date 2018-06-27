@@ -20,10 +20,10 @@ jQuery(document).ready(function($) {
 	jQuery( ".ph-date-to" ).on('change', function(){
 		from = jQuery( ".ph-date-from" ).val();
 		to = jQuery( ".ph-date-to" ).val();
-		
+
 		loding_ico_url = $("#plugin_dir_url").val()+ "includes/booking-callender/icons/loading.gif";
 		$(".booking-info-wraper").html('<img class="loading-ico" align="middle" src="'+loding_ico_url+'">');
-		
+
 		product_id = jQuery( "#phive_product_id" ).val();
 
 		if( from.length === 0 || to.length === 0){
@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 				var LastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 				to = to+"-"+LastDay.getDate();
 			}
-			generate_booking_info_text( from, to, result.price );
+			generate_booking_info_text( from, to, result.price_html );
 		});
 	});
 
