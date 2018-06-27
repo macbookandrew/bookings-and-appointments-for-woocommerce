@@ -1,0 +1,21 @@
+.non-bookable-slot{
+	cursor: not-allowed;
+}
+.not-allowed{
+	cursor: not-allowed!important;
+	opacity: 0.7;
+}
+.not-available-msg{
+	color: #ff7878;
+}
+@media (max-width: 500px) {
+	ul.ph-calendar-days li {margin-right: 3px;}
+}
+
+/*To avoid selection of text on double click*/
+.ph-calendar-date {
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+}
