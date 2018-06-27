@@ -33,7 +33,7 @@
 		</div>
 
 		<div class="ph-filter-item">
-			<input type="button" class="button btn_filter" id="btn_filter" value="Filtrer">
+			<input type="button" class="button btn_filter" id="btn_filter" value="Filter">
 		</div>
 
 		<br class="clear">
@@ -49,7 +49,7 @@
 jQuery(document).ready(function($) {
 
 	$("#btn_filter").on("click", function(){
-		
+
 		admin_url = '<?php echo admin_url("admin.php?page=all-bookings&paged=1")?>';
 		filter_product_ids 	= $("#ph_filter_product_ids").val() ? $("#ph_filter_product_ids").val() : '';
 		filter_from 		= $("#ph_filter_from").val() 		? $("#ph_filter_from").val() 		: '';
