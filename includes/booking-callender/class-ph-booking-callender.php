@@ -109,6 +109,8 @@ class phive_booking_callender{
 		else
 			$end_time = $sart_time;
 
+		$available = true;
+
 		foreach ($this->availability_rules as $key => $rule) {
 			if ( strtotime( date( 'H:i', $sart_time ) ) >= strtotime( $rule['from_time'] ) && strtotime( date( 'H:i', $sart_time ) ) < strtotime( $rule['to_time'] )
 				// && strtotime( date( 'H:i', $end_time ) ) >= strtotime( $rule['from_time'] ) && strtotime( date( 'H:i', $end_time ) ) <= strtotime( $rule['to_time'] )
@@ -116,18 +118,18 @@ class phive_booking_callender{
 
 				//In case of Time calender, the next available time sould start on end of current non-avaiable time.
 				$this->break_end_time = strtotime( date( 'Y-m-d', $sart_time )." ".$rule['to_time'] );
-				return false;
+				$available = false;
 			}
 			if( isset($rule['holiday_saturday']) && $rule['holiday_saturday']=='yes' && date('N', $sart_time)== 6 ){
 				$this->break_end_time = '';
-				return false;
+				$available = false;
 			}
 			if( isset($rule['holiday_sunday']) && $rule['holiday_sunday']=='yes' && date('N', $sart_time)== 7 ){
 				$this->break_end_time = '';
-				return false;
+				$available = false;
 			}
 		}
-		return true;
+		return apply_filters( 'ph_is_available', $available, $sart_time, $interval, $product_id, $this->availability_rules );
 	}
 
 	/**
@@ -235,7 +237,7 @@ class phive_booking_callender{
 
 			$curr_date = strtotime( date ( "Y-m-d", strtotime( "+1 day", $curr_date ) ) );
 		}
-		return $callender_days;
+		return apply_filters( 'ph_generate_days_for_period', $callender_days, $start_date, $end_date, $product_id );
 	}
 
 	public function phive_generate_month_for_period( $start_date, $end_date='', $product_id='' ){
