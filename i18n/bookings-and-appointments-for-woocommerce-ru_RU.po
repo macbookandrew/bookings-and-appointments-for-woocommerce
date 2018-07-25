@@ -1,0 +1,452 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookings and Appointments For WooCommerce\n"
+"POT-Creation-Date: 2018-07-02 09:33-0500\n"
+"PO-Revision-Date: 2018-07-02 09:33-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: ph-bookings-appointments-woocommerce.php\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/class-ph-booking-admin-pages.php:13
+#: includes/admin/class-ph-booking-admin-pages.php:20
+msgid "Bookings"
+msgstr "Бронирование"
+
+#: includes/admin/class-ph-booking-admin-reports-list.php:26
+msgid "Order"
+msgstr "заказ"
+
+#: includes/admin/class-ph-booking-admin-reports-list.php:27
+msgid "Product"
+msgstr "Позиция"
+
+#: includes/admin/class-ph-booking-admin-reports-list.php:28
+#: includes/admin/views/html-ph-booking-admin-reports-list-filters.php:28
+#: includes/html-ph-booking-product-admin-availability.php:50
+msgid "From"
+msgstr "От"
+
+#: includes/admin/class-ph-booking-admin-reports-list.php:29
+#: includes/admin/views/html-ph-booking-admin-reports-list-filters.php:32
+#: includes/html-ph-booking-product-admin-availability.php:51
+msgid "To"
+msgstr "До"
+
+#: includes/admin/class-ph-booking-admin-reports-list.php:30
+msgid "Booked by"
+msgstr "Забронировано"
+
+#: includes/admin/market.php:66
+msgid "Woocommerce Bookings And Appointments"
+msgstr "Woocommerce заказы и назначения"
+
+#: includes/admin/market.php:70
+msgid "Allow multiple bookings for a time slot."
+msgstr "Разрешить множественные заказы на время слот."
+
+#: includes/admin/market.php:71
+msgid "Add Participants/Materials to the booking."
+msgstr "Добавьте участников/материалы для бронирования."
+
+#: includes/admin/market.php:72
+msgid "Add Resources"
+msgstr "Добавить Ресурсы"
+
+#: includes/admin/market.php:73
+msgid "Set special prices or discounts"
+msgstr "Установить специальные цены или скидки"
+
+#: includes/admin/market.php:74
+msgid "Create booking availability rules as you wish."
+msgstr "Создание правила доступности бронирования, как вы пожелаете."
+
+#: includes/admin/market.php:75
+msgid "Allow booking cancellation"
+msgstr "Разрешить отмену бронирования"
+
+#: includes/admin/market.php:76
+msgid "Configure the bookings to require confirmation from the Admin"
+msgstr "Настройка заказы требуют подтверждения от администратора"
+
+#: includes/admin/market.php:81
+msgid "Upgrade to Premium"
+msgstr "Обновление до Premium"
+
+#: includes/admin/market.php:82
+msgid "Live Demo"
+msgstr "Живая демонстрация"
+
+#: includes/admin/views/html-ph-booking-admin-reports-list-filters.php:17
+msgid "Choose product"
+msgstr "Выбор изделия"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:5
+#: includes/booking-callender/html-ph-booking-monthpicker.php:5
+#: includes/booking-callender/html-ph-booking-timepicker.php:5
+#: ph-bookings-appointments-woocommerce.php:116
+msgid "Please pick a booking period"
+msgstr "Пожалуйста, выберите период бронирования"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:23
+msgid "Mon"
+msgstr "Пн"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:24
+msgid "Tue"
+msgstr "Втр"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:25
+msgid "Wed"
+msgstr "Ср"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:26
+msgid "Thu"
+msgstr "Чт"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:27
+msgid "Fri"
+msgstr "Пя"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:28
+msgid "Sat"
+msgstr "Сб"
+
+#: includes/booking-callender/html-ph-booking-datepicker.php:29
+msgid "Sun"
+msgstr "Вос"
+
+#: includes/booking-callender/html-ph-booking-monthpicker.php:8
+msgid "Pick Month(s)"
+msgstr "Месяц (месяцев)"
+
+#: includes/class-ph-booking-product-manager.php:29
+msgid "Booking availability"
+msgstr "Доступность бронирования"
+
+#: includes/class-ph-booking-product-manager.php:34
+#: ph-bookings-appointments-woocommerce.php:111
+msgid "Booking"
+msgstr "Резерв"
+
+#: includes/class-ph-booking-product-manager.php:47
+msgid "Bookable product"
+msgstr "Бронируемое оборудование"
+
+#: includes/class-ph-booking-wc-product.php:127
+msgid "Book Now"
+msgstr "Забронировать Сейчас"
+
+#: includes/html-ph-booking-product-admin-availability.php:49
+msgid "Non-working hours (All days)"
+msgstr "Нерабочие часы (все дни)"
+
+#: includes/html-ph-booking-product-admin-availability.php:54
+msgid "Non-working days (Weekend)"
+msgstr "Нерабочие дни (выходные)"
+
+#: includes/html-ph-booking-product-admin-availability.php:55
+msgid "Saturday"
+msgstr "Суббота"
+
+#: includes/html-ph-booking-product-admin-availability.php:56
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: includes/html-ph-booking-product-admin-options.php:15
+msgid "Booking Period"
+msgstr "Период бронирования"
+
+#: includes/html-ph-booking-product-admin-options.php:17
+msgid "Fixed period of"
+msgstr "Фиксированный срок"
+
+#: includes/html-ph-booking-product-admin-options.php:18
+msgid "Enable Calendar Range"
+msgstr "Включить выбор диапазона календаря"
+
+#: includes/html-ph-booking-product-admin-options.php:23
+msgid "Minutes(s)"
+msgstr "Минут"
+
+#: includes/html-ph-booking-product-admin-options.php:24
+msgid "Hour(s)"
+msgstr "Часы"
+
+#: includes/html-ph-booking-product-admin-options.php:25
+msgid "Day(s)"
+msgstr "Дни"
+
+#: includes/html-ph-booking-product-admin-options.php:27
+msgid "Month(s)"
+msgstr "Месяц (месяцев)"
+
+#: includes/html-ph-booking-product-admin-options.php:29
+msgid ""
+"Allow the user to book a fixed unit/block of minutes/hrs/days/months or "
+"allow the user to choose a range of days in the calendar"
+msgstr ""
+"Разрешить пользователю забронировать фиксированной единицы/блок минут, "
+"часов, дней, месяцев или позволить пользователю выбрать диапазон дней в "
+"календаре"
+
+#: includes/html-ph-booking-product-admin-options.php:33
+msgid "Price"
+msgstr "Цена"
+
+#: includes/html-ph-booking-product-admin-options.php:35
+msgid ""
+"In case of fixed period the price applies to the fixed period chosen by you "
+"above. In case of calendar range the price is for per day."
+msgstr ""
+"В случае фиксированного периода цена относится к фиксированного периода "
+"выбранного вами выше. В случае диапазона календаря Цена предназначен для в "
+"день."
+
+#: includes/html-ph-booking-product-admin-options.php:42
+msgid "First Booking Time"
+msgstr "Вчера впервые"
+
+#: includes/html-ph-booking-product-admin-options.php:45
+msgid ""
+"When your booking period is in minutes, this will be the start time for your "
+"first booking."
+msgstr ""
+"Когда ваш период бронирования в минутах, это будет время начала для вашего "
+"первого заказа."
+
+#: includes/html-ph-booking-product-admin-options.php:51
+msgid "Last Booking Time"
+msgstr "Время бронирования"
+
+#: includes/html-ph-booking-product-admin-options.php:54
+msgid ""
+"When your booking period is in minutes, this will be the start time for your "
+"last booking"
+msgstr ""
+"Когда ваш период бронирования в минутах, это будет время начала для вашего "
+"Последние бронирования"
+
+#: ph-bookings-appointments-woocommerce.php:21
+msgid ""
+"Is everything fine? You already have the Premium version installed in your "
+"website. For any issues, kindly raise a ticket via <a target='_blank' "
+"href='//pluginhive.com/support/'>pluginhive.com/support</a>"
+msgstr ""
+"Это все хорошо? У вас уже есть премиум версии, установленной в вашем веб-"
+"сайте. Для любых вопросов просим поднять билет через <a target='_blank' "
+"href='//pluginhive.com/support/'>pluginhive.com/support</a>"
+
+#: ph-bookings-appointments-woocommerce.php:83
+msgid "January"
+msgstr "Январь"
+
+#: ph-bookings-appointments-woocommerce.php:84
+msgid "February"
+msgstr "Февраль"
+
+#: ph-bookings-appointments-woocommerce.php:85
+msgid "March"
+msgstr "Март"
+
+#: ph-bookings-appointments-woocommerce.php:86
+msgid "April"
+msgstr "Апрель"
+
+#: ph-bookings-appointments-woocommerce.php:87
+#: ph-bookings-appointments-woocommerce.php:101
+msgid "May"
+msgstr "Май"
+
+#: ph-bookings-appointments-woocommerce.php:88
+msgid "June"
+msgstr "Июнь"
+
+#: ph-bookings-appointments-woocommerce.php:89
+msgid "July"
+msgstr "Июль"
+
+#: ph-bookings-appointments-woocommerce.php:90
+msgid "August"
+msgstr "Август"
+
+#: ph-bookings-appointments-woocommerce.php:91
+msgid "September"
+msgstr "Сентябрь"
+
+#: ph-bookings-appointments-woocommerce.php:92
+msgid "October"
+msgstr "Ооктябрь"
+
+#: ph-bookings-appointments-woocommerce.php:93
+msgid "November"
+msgstr "Ноябрь"
+
+#: ph-bookings-appointments-woocommerce.php:94
+msgid "December"
+msgstr "Декабрь"
+
+#: ph-bookings-appointments-woocommerce.php:97
+msgid "Jan"
+msgstr "Янв"
+
+#: ph-bookings-appointments-woocommerce.php:98
+msgid "Feb"
+msgstr "Фев"
+
+#: ph-bookings-appointments-woocommerce.php:99
+msgid "Mar"
+msgstr "Мар"
+
+#: ph-bookings-appointments-woocommerce.php:100
+msgid "Apr"
+msgstr "Апр"
+
+#: ph-bookings-appointments-woocommerce.php:102
+msgid "Jun"
+msgstr "Июнь"
+
+#: ph-bookings-appointments-woocommerce.php:103
+msgid "Jul"
+msgstr "Июль"
+
+#: ph-bookings-appointments-woocommerce.php:104
+msgid "Aug"
+msgstr "Авг"
+
+#: ph-bookings-appointments-woocommerce.php:105
+msgid "Sep"
+msgstr "Сен"
+
+#: ph-bookings-appointments-woocommerce.php:106
+msgid "Oct"
+msgstr "Окт"
+
+#: ph-bookings-appointments-woocommerce.php:107
+msgid "Nov"
+msgstr "Ноя"
+
+#: ph-bookings-appointments-woocommerce.php:108
+msgid "Dec"
+msgstr "Дек"
+
+#: ph-bookings-appointments-woocommerce.php:110
+msgid "Booking cost"
+msgstr "Стоимость"
+
+#: ph-bookings-appointments-woocommerce.php:112
+msgid "is not available."
+msgstr "не предоставляется"
+
+#: ph-bookings-appointments-woocommerce.php:113
+msgid "are not available."
+msgstr "Недоступен."
+
+#: ph-bookings-appointments-woocommerce.php:114
+msgid "Pick a later end date"
+msgstr "Выберите более позднюю дату окончания"
+
+#: ph-bookings-appointments-woocommerce.php:115
+msgid "Max no of blocks available to book is"
+msgstr "Макс не блоков доступны для книги является"
+
+#: ph-bookings-appointments-woocommerce.php:123
+msgid "Support"
+msgstr "Поддержка"
+
+#. Plugin Name of the plugin/theme
+msgid "Bookings and Appointments For WooCommerce"
+msgstr "Заказы и назначений для WooCommerce"
+
+#. Description of the plugin/theme
+msgid "Bookings and Appointments solution for all types of businesses."
+msgstr "Заказы и назначения решение для всех видов бизнеса."
+
+#. Author of the plugin/theme
+msgid "PluginHive"
+msgstr "PluginHive"
+
+#. Author URI of the plugin/theme
+msgid "http://pluginhive.com/about/"
+msgstr "http://pluginhive.com/about/"
+
+#~ msgid ""
+#~ "Allow multiple bookings for a block. Configure the no of bookings allowed "
+#~ "per block."
+#~ msgstr ""
+#~ "Разрешить множественные заказы для блока. Настройка no заказы, "
+#~ "приходящихся на каждый блок."
+
+#~ msgid ""
+#~ "Add Participants/Materials to the booking. For Eg: Adults/Children etc in "
+#~ "case of a hotel room or Chairs/Tables in case of a party equipment "
+#~ "business."
+#~ msgstr ""
+#~ "Добавьте участников/материалы для бронирования. Для Eg: Взрослых/детей и "
+#~ "т.д. в случае гостиничном номере или стулья/таблицы в случае партии "
+#~ "оборудования бизнеса."
+
+#~ msgid ""
+#~ "Add Resources/Services to the booking. For Eg: Breakfast, AC in case of a "
+#~ "hotel room or Chair color in case of a party equipment product."
+#~ msgstr ""
+#~ "Добавьте ресурсы/услуги бронирования. Для Eg: Завтрак, переменного тока в "
+#~ "случае гостиничный номер или цвет стула в случае продукт стороннего "
+#~ "производителя оборудования."
+
+#~ msgid "Set special prices or discounts for specific dates or range of dates"
+#~ msgstr "Специальные цены или скидки на определенные даты или диапазона дат"
+
+#~ msgid "Set special prices based on the number of dates selected"
+#~ msgstr "Установить специальные цены, основанный на количество выбранных дат"
+
+#~ msgid "Set prices based on the number of people or resources"
+#~ msgstr "Установить цены в зависимости от количества людей или ресурсов"
+
+#~ msgid "Set special prices per person/resource"
+#~ msgstr "Установить специальные цены за человека/ресурсов"
+
+#~ msgid ""
+#~ "Set any number of non-working hours. You can set your lunch time, tea "
+#~ "time etc as non-bookable"
+#~ msgstr ""
+#~ "Установите любое количество не рабочих часов. Можно задать время обед, "
+#~ "полдник и т.д. как не забронировать"
+
+#~ msgid ""
+#~ "Allows admin to set any day or range of days as non-working days. You may "
+#~ "not be working on weekends or holidays so we have added a feature for you "
+#~ "to mark these days as non-bookable!"
+#~ msgstr ""
+#~ "Позволяет администратору задать любой день или диапазон дней как "
+#~ "нерабочих дней. Вы может не работать на выходные или праздничные дни так "
+#~ "мы добавили возможность для вас отметить эти дни, как не забронировать!"
+
+#~ msgid ""
+#~ "Create booking availability rules as you wish. You can restrict the "
+#~ "Bookings Opening and closing based on relativity to this day(today) or "
+#~ "based on specific dates."
+#~ msgstr ""
+#~ "Создание правила доступности бронирования, как вы пожелаете. Вы можете "
+#~ "ограничить заказы открытия и закрытия, основанные на теории "
+#~ "относительности этого day(today) или на основе конкретных дат."
+
+#~ msgid ""
+#~ "You can create availability rules based on a range/specific duration of "
+#~ "minutes/days/hours/months"
+#~ msgstr ""
+#~ "Можно создавать правила доступности на основе конкретного диапазона/"
+#~ "продолжительность минут, дней, часов, месяцев"

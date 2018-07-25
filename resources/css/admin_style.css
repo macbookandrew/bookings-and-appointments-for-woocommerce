@@ -1,0 +1,30 @@
+
+/* Admin Bookings report page (html-ph-booking-admin-reports-list-filters.php)*/
+#booking-list-table-form{
+	width: 73%;
+	float: left;
+}
+div.ph-list-filter-wraper{
+	width: 56%;
+	float: left;
+}
+div.ph-list-bulkaction-wraper{
+	width: 18%;
+	float: left;
+}
+div.ph-list-pagination-wraper{
+	float: right;
+}
+div.ph-filter-item{
+	float: left;
+}
+.ph_filter_start{
+	width: 100px;
+}
+.ph_booking_status, .ph_filter_product_ids, .ph_filter_from, .ph_filter_to, .btn_filter{
+	height: 35px!important;
+	margin-bottom: 5px;
+	vertical-align: top;
+	max-width: 130px;
+}
+
